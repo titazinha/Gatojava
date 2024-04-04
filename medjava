@@ -1,0 +1,54 @@
+public class Medico {
+    private String nome;
+    private int consultas;
+    private int idade;
+    
+    public Medico(String nome, int consultas, int idade) {
+        this.nome = nome;
+        this.consultas = consultas;
+        this.idade = idade;
+    }   
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getConsultas() {
+        return consultas;
+    }
+
+    public void setConsultas(int consultas) {
+        this.consultas = consultas;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+   
+    @Override
+    public String toString() {
+        return "Nome: " + nome + "\nConsultas: " + consultas + "\nIdade: " + idade;
+    }
+    public void exibirConsultas() {
+        int limite = 20;
+        int meta;
+        
+        meta = (limite - consultas);
+        System.out.println("Faltam " + meta + " Consultas para atingir a meta ");
+    }
+    public void consultasConcluidas() {
+        if (consultas == 20){
+            System.out.println(" Voce atingiu a meta! ");
+        }else{
+         System.out.println(" Voce nao atingiu  a meta! ");
+        }
+    }
+}
