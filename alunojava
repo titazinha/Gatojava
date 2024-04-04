@@ -55,3 +55,31 @@ public String toString(){
            "Status: " + verificarMedia(7.0f) + "\n" ;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+//metodo da main
+public class Class {
+    public static void main(String[] args){  
+        Medico med1 = new Medico("Bruna Batista", 18, 19);
+        System.out.println(med1.toString());
+        
+ med1.exibirConsultas();
+ med1.consultasConcluidas();
+}
+ 
+}
+
+
+
+
+
