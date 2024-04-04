@@ -1,0 +1,21 @@
+public class MainGato {
+
+    public static void main(String[] args) {
+
+        //Primeiro Objeto da classe main
+        Gato gato1 = new Gato("Egipcio", 2, "Frajola");
+        gato1.saudacao();
+        System.out.println(gato1.toString());
+
+        //Segundo Objeto da classe main
+        Gato gato2 = new Gato("Pitbull", 5, "Princeso");
+        gato2.saudacao();
+        System.out.println(gato2.toString());
+
+        //Método Verificar Idade dos gatos
+        gato1.verificarIdades(gato2);
+        
+        gato2.setNome("peludo");
+        System.out.println(gato2.toString());
+    }
+}
