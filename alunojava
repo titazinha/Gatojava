@@ -1,0 +1,57 @@
+public class Aluno {
+    
+      int matricula;
+      String nome;
+      float media;
+
+    public Aluno(int matricula, String nome){
+
+    this.matricula = matricula;
+    this.nome = nome;
+    }   
+
+    // Métodos getters
+public int getMatricula() {
+        return matricula;
+    }
+public String getNome() {
+        return nome;
+    }
+public float getMedia() {
+        return media;
+    }
+    // Métodos Setters
+public void setMatricula(int matricula){
+    this.matricula = matricula;
+    }
+public void setNome(String nome){
+    this.nome = nome;
+    }
+public void setMedia(float media){
+    this.media = media;
+    }
+
+//Método para calcular a media do aluno
+public float calcularMedia(float nota1, float nota2){
+       
+    media = (nota1 + nota2)/ 2.0f;
+    return media;
+}
+//Método para verificar se o aluno foi aprovado
+public String verificarMedia(float mediaAprovacao){
+    if (media >= mediaAprovacao) {
+        return "Aprovado";
+        } else {
+        return "Reprovado";
+    }    
+}
+
+@Override
+public String toString(){
+
+    return "Matricula: " + this.matricula + " \n" + 
+           "Nome: " + this.nome +  "\n" + 
+           "Media: " + this.media + "\n" +
+           "Status: " + verificarMedia(7.0f) + "\n" ;
+}
+}
