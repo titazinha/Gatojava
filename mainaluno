@@ -1,0 +1,21 @@
+public class MainAluno {
+    
+    
+    public static void main(String[] args) {
+        
+        //Primeiro Objeto alunoInst1
+        Aluno alunoInst1 = new Aluno(1234, "Heitor");
+        alunoInst1.calcularMedia(8.5f, 7.0f);
+        
+        System.out.println("Informacoes do Primeiro Aluno:");        
+        System.out.println(alunoInst1.toString()); 
+        
+        //Segundo Objeto alunoInst2
+        Aluno alunoInst2 = new Aluno(1234, "Pedro");
+        alunoInst2.calcularMedia(7.5f, 4.7f);
+        
+        System.out.println("Informacoes do Segundo Aluno:");  
+        System.out.println(alunoInst2.toString());   
+    
+    }
+}
